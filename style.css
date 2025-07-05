@@ -1,49 +1,133 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Pixelify Sans", sans-serif;
+* {
+    padding: 0; /* Elimina el padding por defecto de todos los elementos */
+    margin: 0; /* Elimina el margen por defecto de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho y alto de los elementos */
+    font-family: "Pixelify Sans", sans-serif; /* Establece la fuente de todos los elementos a "Pixelify Sans" o a una fuente sans-serif de respaldo */
 }
 
-#experience{
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
+body {
+    background-color: #121212; /* Establece un color de fondo oscuro para el cuerpo de la página */
+    color: #ffffff; /* Establece el color del texto a blanco */
 }
 
-#experience-canvas{
-    width: 100%;
-    height: 100%;
-
+#experience {
+    position: fixed; /* Fija el elemento en la ventana del navegador */
+    height: 100%; /* Establece la altura al 100% de la ventana */
+    width: 100%; /* Establece el ancho al 100% de la ventana */
+    top: 0; /* Posiciona el elemento en la parte superior de la ventana */
+    left: 0; /* Posiciona el elemento en el lado izquierdo de la ventana */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del elemento */
+    background-color: #1a1a1a; /* Establece un color de fondo gris oscuro para el área de experiencia */
 }
 
-.hidden{
-    display: none;
+#experience-canvas {
+    width: 100%; /* Establece el ancho del canvas al 100% del contenedor */
+    height: 100%; /* Establece la altura del canvas al 100% del contenedor */
 }
 
-.modal{
-    z-index: 999;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 700px;
-    background-color: #ad8671;
-    border: 2px solid #fff;
-    color: #fff; 
+.hidden {
+    display: none; /* Oculta el elemento que tiene esta clase */
 }
 
-.modal-wrapper{
-    padding: 12px;
+.modal {
+    z-index: 999; /* Establece la capa del modal para que esté por encima de otros elementos */
+    position: absolute; /* Posiciona el modal de forma absoluta dentro de su contenedor */
+    top: 50%; /* Posiciona el modal a la mitad de la altura del contenedor */
+    left: 50%; /* Posiciona el modal a la mitad del ancho del contenedor */
+    transform: translate(-50%, -50%); /* Centra el modal en la pantalla */
+    width: 90%; /* Establece el ancho del modal al 90% del contenedor */
+    max-width: 700px; /* Establece un ancho máximo de 700px para el modal */
+    background-color: #6d4c41; /* Establece un color de fondo marrón para el modal */
+    border: 4px solid #8d6e63; /* Establece un borde de 4px de color marrón claro */
+    color: #fff; /* Establece el color del texto a blanco */
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.5); /* Agrega una sombra difusa al modal */
+    border-radius: 8px; /* Redondea las esquinas del modal */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del modal */
 }
 
-.modal-header{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.modal-wrapper {
+    padding: 24px; /* Agrega un padding de 24px dentro del contenedor del modal */
+}
+
+.modal-header {
+    display: flex; /* Utiliza flexbox para organizar los elementos en el encabezado */
+    justify-content: space-between; /* Espacia los elementos en el encabezado */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    margin-bottom: 16px; /* Agrega un margen inferior de 16px al encabezado */
+}
+
+.modal-title {
+    font-size: 28px; /* Establece el tamaño de la fuente del título del modal */
+    text-transform: uppercase; /* Convierte el texto del título a mayúsculas */
+    letter-spacing: 1px; /* Agrega un espaciado de 1px entre las letras */
+    color: #ffe0b2; /* Establece el color del texto del título a un tono claro */
+    text-shadow: 2px 2px 0 #5d4037; /* Agrega una sombra al texto del título */
+}
+
+.modal-exit-button {
+    background: none; /* Elimina el fondo del botón de salida */
+    border: none; /* Elimina el borde del botón de salida */
+    color: #ffe0b2; /* Establece el color del texto del botón de salida a un tono claro */
+    font-size: 24px; /* Establece el tamaño de la fuente del botón de salida */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+    transition: color 0.3s; /* Agrega una transición suave al color del texto del botón */
+}
+
+.modal-exit-button:hover {
+    color: #ff9800; /* Cambia el color del texto del botón de salida al pasar el mouse sobre él */
+}
+
+.modal-content {
+    font-size: 16px; /* Establece el tamaño de la fuente del contenido del modal */
+    line-height: 1.6; /* Establece la altura de línea para mejorar la legibilidad */
+    margin: 16px 0; /* Agrega un margen superior e inferior de 16px al contenido */
+    max-height: 300px; /* Establece una altura máxima de 300px para el contenido */
+    overflow-y: auto; /* Agrega un desplazamiento vertical si el contenido excede la altura máxima */
+}
+
+.modal-project-visit-button {
+    display: inline-block; /* Permite que el botón se comporte como un bloque en línea */
+    background-color: #ff9800; /* Establece un color de fondo naranja para el botón */
+    color: #fff; /* Establece el color del texto del botón a blanco */
+    padding: 10px 20px; /* Agrega un padding de 10px vertical y 20px horizontal al botón */
+    text-decoration: none; /* Elimina el subrayado del texto del botón */
+    border-radius: 4px; /* Redondea las esquinas del botón */
+    transition: background-color 0.3s; /* Agrega una transición suave al color de fondo del botón */
+}
+
+.modal-project-visit-button:hover {
+    background-color: #ffe0b2; /* Cambia el color de fondo del botón al pasar el mouse sobre él */
+    color: #5d4037; /* Cambia el color del texto del botón al pasar el mouse sobre él */
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 
+            0 0 0 rgba(0,0,0,0.3); /* Define el estado inicial de la animación de pulso */
+    }
+    100% {
+        box-shadow: 
+            0 0 10px rgba(255, 255, 255, 0.5); /* Define el estado final de la animación de pulso */
+    }
+}
+
+/* Efecto de píxeles para texto */
+.pixel-text {
+    position: relative; /* Permite posicionar elementos hijos de forma absoluta */
+    image-rendering: pixelated; /* Mejora la apariencia de las fuentes pixel art */
+}
+
+.pixel-text::after {
+    content: ''; /* Crea un pseudo-elemento vacío */
+    position: absolute; /* Posiciona el pseudo-elemento de forma absoluta */
+    top: 0; /* Posiciona el pseudo-elemento en la parte superior */
+    left: 0; /* Posiciona el pseudo-elemento a la izquierda */
+    width: 100%; /* Establece el ancho del pseudo-elemento al 100% del elemento padre */
+    height: 100%; /* Establece la altura del pseudo-elemento al 100% del elemento padre */
+    background: 
+        linear-gradient(rgba(255,255,255,0.1), transparent 1px), /* Crea un fondo con un gradiente sutil */
+        linear-gradient(90deg, rgba(255,255,255,0.1), transparent 1px); /* Crea un fondo con un gradiente sutil en dirección horizontal */
+    background-size: 4px 4px; /* Establece el tamaño del fondo del gradiente */
+    pointer-events: none; /* Desactiva los eventos del mouse en el pseudo-elemento */
 }
