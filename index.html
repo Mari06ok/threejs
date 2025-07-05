@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div id="experience">
+        <canvas id="experience-canvas"></canvas>
+    </div>
+
+    <div class="modal hidden">
+        <div class="modal-wrapper">
+            <div class="modal-header">
+                <h1 class="modal-title">Proyecto 1</h1>
+                <button class="modal-exit-button">Salir</button>
+            </div>
+            <div class="modal-content">
+                <div class="modal-content-wrapper">
+                    <a href="https://sketchfab.com/3d-models/arbol-manzano-apple-tree-lowpoly-b13449cdcaf04358bcf7d5fe068e46f7" class="modal-project-visit-button">View project</a>
+                    <div class="modal-project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas autem culpa qui ipsa eum, perspiciatis omnis maxime? Ipsa, molestias fugit esse error hic sit nostrum dicta impedit temporibus numquam nesciunt.
+                    Saepe ad expedita eligendi vel. Deleniti optio esse aliquam? Itaque, eum quis aspernatur eaque nisi ipsum placeat deleniti sapiente voluptatum iste adipisci nihil laborum doloremque tempora debitis ipsam! Ea, fuga?
+                    Eum magnam aperiam harum blanditiis nihil molestias fugiat! Quos a earum rerum omnis voluptas cumque nesciunt obcaecati, nulla officiis doloremque placeat, eos exercitationem commodi, itaque laborum. Vitae accusamus impedit necessitatibus.
+                    Adipisci voluptatibus est numquam autem ipsam odit non. Asperiores numquam voluptatum facere alias harum culpa et corporis, illum obcaecati laboriosam consequuntur aperiam, ad dignissimos quibusdam itaque quia ab vitae at!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="importmap">
+    {
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@v0.149.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.149.0/examples/jsm/"
+    }
+    }
+    </script>
+
+    <script type="module" src="./main.js"></script>
+
+</body>
+</html>
