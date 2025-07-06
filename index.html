@@ -1,37 +1,43 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Abre la etiqueta HTML y establece el idioma como español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
+    <title>Prueba</title> <!-- Establece el título de la página que aparece en la pestaña del navegador -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconecta a la API de Google Fonts para mejorar el rendimiento -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconecta a la fuente de Google Fonts con soporte de CORS -->
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Importa la fuente "Pixelify Sans" desde Google Fonts -->
+    <link rel="stylesheet" href="./style.css"> <!-- Vincula el archivo CSS externo para estilos personalizados -->
 </head>
 <body>
     
-    <div id="experience">
-        <canvas id="experience-canvas"></canvas>
+    <div id="experience"> <!-- Contenedor principal para la experiencia 3D -->
+        <canvas id="experience-canvas"></canvas> <!-- Elemento canvas donde se renderizará la escena 3D -->
     </div>
 
-    <div class="modal hidden">
-        <div class="modal-wrapper">
-            <div class="modal-header pixel-header">
-                <h1 class="modal-title pixel-text glow">PROYECTO 1</h1>
-                <button class="modal-exit-button pixel-button hover-pulse">✖</button>
+    <div class="modal hidden"> <!-- Contenedor del modal, inicialmente oculto -->
+        <div class="modal-wrapper"> <!-- Envuelve el contenido del modal -->
+            <div class="modal-header pixel-header"> <!-- Encabezado del modal con clase para estilos -->
+                <h1 class="modal-title pixel-text glow">PROYECTO 1</h1> <!-- Título del modal con efectos de texto -->
+                <button class="modal-exit-button pixel-button hover-pulse">✖</button> <!-- Botón para cerrar el modal -->
             </div>
-            <div class="modal-content pixel-content">
-                <div class="modal-content-wrapper">
-                    <a href="https://sketchfab.com/3d-models/arbol-manzano-apple-tree-lowpoly-b13449cdcaf04358bcf7d5fe068e46f7" class="modal-project-visit-button pixel-button hover-pulse">
-                        VER PROYECTO →
+            <div class="modal-content pixel-content"> <!-- Contenedor del contenido del modal -->
+                <div class="modal-content-wrapper"> <!-- Envuelve el contenido del modal -->
+                    <a 
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="modal-project-visit-button pixel-button hover-pulse hidden"> <!-- Botón para visitar el proyecto, inicialmente oculto -->
+                        VER PROYECTO → <!-- Texto del botón -->
                     </a>
-                    <div class="modal-project-description pixel-text">
-                        <p class="description-title">DESCRIPCIÓN:</p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas autem culpa qui ipsa eum, perspiciatis omnis maxime? Ipsa, molestias fugit esse error hic sit nostrum dicta impedit temporibus numquam nesciunt.
-                    Saepe ad expedita eligendi vel. Deleniti optio esse aliquam? Itaque, eum quis aspernatur eaque nisi ipsum placeat deleniti sapiente voluptatum iste adipisci nihil laborum doloremque tempora debitis ipsam! Ea, fuga?
-                    Eum magnam aperiam harum blanditiis nihil molestias fugiat! Quos a earum rerum omnis voluptas cumque nesciunt obcaecati, nulla officiis doloremque placeat, eos exercitationem commodi, itaque laborum. Vitae accusamus impedit necessitatibus.
-                    Adipisci voluptatibus est numquam autem ipsam odit non. Asperiores numquam voluptatum facere alias harum culpa et corporis, illum obcaecati laboriosam consequuntur aperiam, ad dignissimos quibusdam itaque quia ab vitae at!</div>
+                    <div class="modal-project-description pixel-text"> <!-- Descripción del proyecto en el modal -->
+                        <p class="description-title">DESCRIPCIÓN:</p> <!-- Título de la descripción -->
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas autem culpa qui ipsa eum, perspiciatis omnis maxime? Ipsa, molestias fugit esse error hic sit nostrum dicta impedit temporibus numquam nesciunt. <!-- Texto de ejemplo para la descripción -->
+                        Saepe ad expedita eligendi vel. Deleniti optio esse aliquam? Itaque, eum quis aspernatur eaque nisi ipsum placeat deleniti sapiente voluptatum iste adipisci nihil laborum doloremque tempora debitis ipsam! Ea, fuga? <!-- Más texto de ejemplo -->
+                        Eum magnam aperiam harum blanditiis nihil molestias fugiat! Quos a earum rerum omnis voluptas cumque nesciunt obcaecati, nulla officiis doloremque placeat, eos exercitationem commodi, itaque laborum. Vitae accusamus impedit necessitatibus. <!-- Más texto de ejemplo -->
+                        Adipisci voluptatibus est numquam autem ipsam odit non. Asperiores numquam voluptatum facere alias harum culpa et corporis, illum obcaecati laboriosam consequuntur aperiam, ad dignissimos quibusdam itaque quia ab vitae at! <!-- Más texto de ejemplo -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -45,8 +51,8 @@
         }
     }
     </script>
-
-    <script type="module" src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script> <!-- Importa la biblioteca GSAP para animaciones -->
+    <script type="module" src="./main.js"></script> <!-- Importa el archivo JavaScript principal como módulo -->
 
 </body>
 </html>
