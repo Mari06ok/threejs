@@ -126,7 +126,7 @@
           <mxGeometry y="148" width="200" height="42" as="geometry" />
         </mxCell>
         <mxCell id="V4DVvewW9u25lkIsxlTv-33" value="Planilla" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="100" y="690" width="200" height="200" as="geometry">
+          <mxGeometry x="100" y="660" width="200" height="200" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
